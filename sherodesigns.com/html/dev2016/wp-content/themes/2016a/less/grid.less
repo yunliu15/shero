@@ -1,0 +1,150 @@
+.grid-item {
+  display: block;
+  float: left;
+  margin-bottom: 2.5%;
+}
+
+.grid-large .grid-item {
+  width: 100%;
+  float: none;
+}
+
+.grid-medium .grid-item {
+  width: 48.75%;
+  float: left;
+  margin-right: 2.5%;
+}
+
+.grid-medium .grid-item:nth-of-type(2n+2) {
+  margin-right: 0;
+  clear: right;
+}
+
+.blog-inner {
+  padding: 1.5em;
+  min-height: 306px;
+}
+
+.blog-inner h3 a {
+  font-size: 0.9em;
+  height: 70px;
+  display: block;
+}
+
+.blog-inner p {
+  margin:0;
+}
+
+@media screen and ( min-width: @medium-min-width ) {
+
+  .grid-large .grid-item {
+    width: 48.75%;
+    float: left;
+    margin-right: 2.5%;
+  }
+
+  .grid-large .grid-item:nth-of-type(2n+2) {
+    margin-right: 0;
+    clear: right;
+  }
+
+  .column {
+    display: block;
+    float: left;
+  }
+
+  .twitter {
+    float:right;
+    width:24%;
+    border: 2px solid #F1F2F2;
+  }
+
+  .twitter iframe {
+    height: 347px !important;
+  }
+
+  .column.third {
+    width: 24%;
+    margin-right: 1.2%;
+  }
+
+  .column.third:nth-of-type(3n+1) {
+    clear: left;
+  }
+
+  .column.third:nth-of-type(3n+1):hover {
+    background-color: #B2235A;
+    transition: all 0.25s linear;
+    cursor: pointer;
+
+  }
+
+  .column.third:nth-of-type(3n+2):hover {
+    background-color: #EE8D3E;
+    transition: all 0.25s linear;
+    cursor: pointer;
+  }
+
+  .column.third:nth-of-type(3n+3):hover {
+    background-color: #7BAE4D;
+    transition: all 0.25s linear;
+    cursor: pointer;
+  }
+
+
+  .column.third:nth-of-type(3n+3) {
+    margin-right: 0;
+    clear: right;
+  }
+
+  .column.two-thirds-left {
+    width: 65.83%;
+    margin-right: 2.5%;
+  }
+
+  .column.one-third-right {
+    width: 31.66%;
+  }
+
+}
+
+
+@media screen and ( min-width: @large-min-width )  {
+
+  .column.one-half {
+    width: 48.75%;
+  }
+
+  .column.one-half:nth-of-type(2n+1) {
+    clear: left;
+    margin-right: 2.5%;
+  }
+
+  .column.one-half:nth-of-type(2n+2) {
+    clear: right;
+  }
+
+  .column.quarter {
+    width: 23.125%;
+    margin-right: 2.5%;
+  }
+
+  .column.quarter:nth-of-type(4n+1) {
+    clear: left;
+  }
+
+  .column.quarter:nth-of-type(4n+4) {
+    margin-right: 0;
+    clear: right;
+  }
+
+  .column.three-quarters-left {
+    width: 74.375%;
+  }
+
+  .column.one-quarter-right {
+    width: 23.125%;
+    float: right;
+  }
+
+}
